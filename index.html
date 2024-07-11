@@ -4,46 +4,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Muebles Comerce</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/app.css">
 </head>
 
 <body>
 
   <header>
-    <h1>Tienda Muebles</h1>
+    <h1 class="nombre-sitio">Tienda <span>Muebles</span></h1>
+
+    <div class="contenedor-navegacion">
+      <nav class="nav-principal contenedor">
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="blog.html">Blog</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+
   </header>
 
-  <nav>
-    <a href="index.html">Inicio</a>
-    <a href="nosotros.html">Nosotros</a>
-    <a href="tienda.html">Tienda</a>
-    <a href="blog.html">Blog</a>
-    <a href="galeria.html">Galeria</a>
-    <a href="contacto.html">Contacto</a>
-  </nav>
+  <div class="hero"></div>
 
-  <section>
-    <h2>Categoria de Productos</h2>
-    <div>
-      <img src="img/categoria1.jpg" alt="">
-      <a href="#">Oficina</a>
-    </div>
-    <div>
-      <img src="img/categoria2.jpg" alt="">
-      <a href="#">Hogar</a>
-    </div>
-    <div>
-      <img src="img/categoria3.jpg" alt="">
-      <a href="#">Cocina</a>
+  <section class="contenedor categorias">
+    <h2 class="section-titulo">Categoria de Productos</h2>
+    <div class="listado-categorias">
+      <div class="categoria">
+        <img src="img/categoria1.jpg" alt="">
+        <a href="#">Oficina</a>
+      </div>
+      <div class="categoria">
+        <img src="img/categoria2.jpg" alt="">
+        <a href="#">Hogar</a>
+      </div>
+      <div class="categoria">
+        <img src="img/categoria3.jpg" alt="">
+        <a href="#">Cocina</a>
+      </div>
     </div>
   </section>
 
-  <section>
-    <div>
-      <h2>Sobre Nosotros</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, labore quia nobis facere odit, recusandae nemo
-        rerum quam accusamus vero itaque ut voluptatem, ab natus sint deleniti laudantium iusto adipisci!</p>
-      <img src="img/nosotros.jpg" alt="sobre nosotros">
+  <section class="sobre-nosotros">
+    <div class="contenedor sobre-nosotros-grid">
+      <div>
+        <h2>Sobre Nosotros</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit quos, ipsum earum vitae impedit quam? Eius,
+          consectetur ullam accusamus praesentium ipsum cumque. Asperiores aliquam laudantium ullam assumenda illo, iure
+          aspernatur.
+        </p>
+      </div>
     </div>
   </section>
 

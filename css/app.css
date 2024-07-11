@@ -1,0 +1,143 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /*1rem=10px*/
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: Raleway-Regular;
+  src: url(fonts/Raleway-Regular.ttf);
+}
+
+@font-face {
+  font-family: PlayfairDisplay-Black;
+  src: url(fonts/PlayfairDisplay-Black.ttf);
+}
+
+body {
+  font-family: Raleway-Regular, Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+/* Globales */
+
+h1,
+h2,
+h3 {
+  font-family: PlayfairDisplay-Black, Arial, Helvetica, sans-serif;
+  margin: 0 0 5rem 0;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Header y Navegacion */
+.nombre-sitio {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.nombre-sitio span {
+  color: #0079c7;
+}
+
+.contenedor-navegacion {
+  border-top: .1rem solid #e1e1e1;
+}
+
+.nav-principal {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero {
+  background-image: url(../img/principal.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 0 -39rem;
+  height: 65rem;
+}
+
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+/* categorias */
+
+.listado-categorias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.categorias {
+  padding-top: 5rem;
+}
+
+.categorias h2 {
+  text-align: center;
+}
+
+.categoria a {
+  display: block;
+  padding: 2rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.categoria a:hover {
+  background-color: #037bc0;
+  border-bottom-right-radius: 1rem;
+  color: #ffffff;
+}
+
+/* sobre nosotros */
+.sobre-nosotros {
+  margin-top: 5rem;
+  height: 55rem;
+  background-image: linear-gradient(to right, transparent 50%, #037bc0 50%, #037bc0 100%), url(../img/nosotros.jpg);
+  padding: 10rem 0;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 100%, 130rem;
+}
+
+.sobre-nosotros-grid {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sobre-nosotros-grid div {
+  flex-basis: 50%;
+  padding-left: 5rem;
+  color: #ffffff;
+}
