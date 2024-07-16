@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muebles Comerce - Contacto</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+  <header>
+    <h1 class="nombre-sitio">Tienda <span>Muebles</span></h1>
+
+    <div class="contenedor-navegacion">
+      <nav class="nav-principal contenedor">
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="blog.html">Blog</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+
+  </header>
+
+  <main class="contenedor contenido-principal">
+    <h2 class="nombre-sitio">Contacto</h2>
+    <form action="#" class="formulario">
+      <fieldset>
+        <legend>Datos Personales</legend>
+
+        <div class="campo">
+          <label for="nombre">Nombre: </label>
+          <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+        </div>
+
+        <div class="campo">
+          <label for="asunto">Asunto: </label>
+          <input type="text" name="asunto" id="asunto" placeholder="Asunto">
+        </div>
+
+        <div class="campo">
+          <label for="email">Email: </label>
+          <input type="email" name="email" id="email" placeholder="Email">
+        </div>
+
+        <div class="campo">
+          <label for="telefono">Telefono: </label>
+          <input type="tel" name="telefono" id="telefono" placeholder="Telefono">
+        </div>
+
+        <div class="campo">
+          <label for="mensaje">Mensaje: </label>
+          <textarea name="mensaje" id="mensaje" rows="20" cols="50"></textarea>
+        </div>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Pais</legend>
+
+        <div class="campo">
+          <label for="pais">Pais: </label>
+          <select name="pais" id="pais">
+            <option disabled>-- Seleccione --</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Peru">Peru</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Argentina">Argentina</option>
+          </select>
+        </div>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Informacion Extra</legend>
+
+        <div class="campo">
+          <label for="cliente">Cliente: </label>
+          <input type="radio" name="tipo" id="cliente" value="cliente">
+        </div>
+
+        <div class="campo">
+          <label for="proveedor">Proveedor: </label>
+          <input type="radio" name="tipo" id="proveedor" value="proveedor">
+        </div>
+
+        <div class="campo">
+          <label for="categoria">Categoria de Interes: </label>
+          <input list="categorias" name="categorias">
+          <datalist id="categorias">
+            <option value="Jardin">
+            <option value="Cocina">
+            <option value="Exterior">
+            <option value="Recamaras">
+            <option value="Oficina">
+            <option value="Television">
+          </datalist>
+        </div>
+
+      </fieldset>
+
+      <input type="submit" value="Enviar" class="btn">
+    </form>
+  </main>
+
+  <footer class="site-footer">
+
+    <div class="contenedor grid-footer">
+      <div>
+        <h3 class="section-titulo">Categorias</h3>
+        <nav class="footer-list">
+          <a href="#">Cocina</a>
+          <a href="#">Oficina</a>
+          <a href="#">Jardin</a>
+          <a href="#">Cochera</a>
+          <a href="#">Dormitorios</a>
+        </nav>
+      </div>
+
+      <div>
+        <h3 class="section-titulo">Sobre Nosotros</h3>
+        <nav class="footer-list">
+          <a href="#">Nuestra Historia</a>
+          <a href="#">Mision, Vision y valores</a>
+          <a href="#">Carreras</a>
+          <a href="#">Politicas de Privacidad</a>
+          <a href="#">Terminos de Servicio</a>
+        </nav>
+      </div>
+
+      <div>
+        <h3 class="section-titulo">Soporte</h3>
+        <nav class="footer-list">
+          <a href="#">Preguntas Frecuentes</a>
+          <a href="#">Ayuda en Linea</a>
+          <a href="#">Confianza y Seguridad</a>
+        </nav>
+      </div>
+
+    </div>
+
+    <p class="copyright">&copy; Todos los Derechos Reservados </p>
+
+  </footer>
+
+</body>
+
+</html>
